@@ -810,10 +810,6 @@ form button:hover,
 		grid-area: gridMain;
 	}
 
-	.grid-sidebar {
-		grid-area: gridSidebar;
-	}
-
 	.logo-image {
 		max-width: 100%;
 	}

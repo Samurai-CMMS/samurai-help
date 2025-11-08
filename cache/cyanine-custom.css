@@ -80,3 +80,44 @@ footer {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+:root { --header-h: 70px; } /* match your header height */
+
+/* ensure ancestor containers don't add offset */
+.grid-container {
+  overflow: visible;
+  align-items: start;
+}
+
+/* make sidebar sit directly below header and stay in view */
+.grid-sidebar {
+  position: sticky;
+  top: var(--header-h);
+  align-self: start;
+  height: calc(100vh - var(--header-h));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: inherit;
+  z-index: 900;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* inner nav scrollbars */
+#contentnav {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #b8c0cc transparent;
+}
+#contentnav::-webkit-scrollbar { width: 8px; }
+#contentnav::-webkit-scrollbar-thumb { background: #b8c0cc; border-radius: 8px; }
+
+/* disable sticky on narrow screens */
+@media (max-width: 992px) {
+  .grid-sidebar {
+    position: static;
+    height: auto;
+    overflow: visible;
+  }
+}
