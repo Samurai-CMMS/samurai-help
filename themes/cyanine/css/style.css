@@ -243,6 +243,7 @@ main strong {
 .link:link,
 .link:visited {
 	transition: none;
+	text-decoration: none;
 }
 
 a,
