@@ -28,7 +28,7 @@ article {}
 article a,
 article a:link,
 article a:visited {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 /* article a:before{ content: '\203A'; margin-right: 5px; } */
@@ -907,7 +907,7 @@ form button:hover,
 
 	article a[href] {
 		color: black;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	article a[href]:after {
