@@ -1369,9 +1369,6 @@ code {
     transition: color .15s ease-in
 }
 
-.link:focus {
-    outline: 1px dotted currentColor
-}
 
 .list {
     list-style-type: none

@@ -20,3 +20,28 @@
   border-style: none !important;
   padding-top: 6px;
 }
+
+.breadcrumb {
+  font-size: 12px !important;
+  font-weight: 500;
+}
+
+.pill-secondary {
+  background-color: #eee;
+  padding: 6px 10px 6px 10px;
+  border-radius: 6px;
+}
+thead {
+	text-align: left;
+	background: #f5f6fa !important;
+}
+
+tr {
+  border-style: none;
+}
+
+td {
+  border-top-style: solid;
+  border-color: #ebecef;
+  border-width: 0.5px;
+}
