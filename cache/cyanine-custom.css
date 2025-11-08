@@ -45,3 +45,7 @@ td {
   border-color: #ebecef;
   border-width: 0.5px;
 }
+
+footer {
+  background-color: white !important;
+}

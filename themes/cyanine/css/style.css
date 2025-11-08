@@ -555,7 +555,7 @@ button.play-video::after {
 .grid-sidebar {
 	display: block;
 	width: 100%;
-	background-color: white !important;
+	{/*background-color: white !important;*/}
 }
 
 .grid-footer {
@@ -802,7 +802,7 @@ form button:hover,
 
 	.grid-header {
 		grid-area: gridHeader;
-		background-color: white !important;
+		/*background-color: white !important;*/
 	}
 
 	.grid-main {
