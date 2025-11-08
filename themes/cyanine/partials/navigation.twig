@@ -7,11 +7,11 @@
 		{% set depth = element.keyPathArray|length %}
 
         {% if element.activeParent %}
-			<li class="bt bb margin-bottom-1 {{ element.elementType }} level-{{ depth }} activeParent">
+			<li class="bt bb side-menu-item {{ element.elementType }} level-{{ depth }} activeParent">
 		{% elseif element.active %}
-			<li class="bt bb margin-bottom-1 {{ element.elementType }} level-{{ depth }} active">
+			<li class="bt bb side-menu-item {{ element.elementType }} level-{{ depth }} active">
 		{% else %}
-			<li class="bt bb margin-bottom-1 {{ element.elementType }} level-{{ depth }}">
+			<li class="bt bb side-menu-item {{ element.elementType }} level-{{ depth }}">
 		{% endif %}
         
         {% if (element.elementType == 'folder') %}
@@ -22,7 +22,7 @@
                 </ul>
 		{% endif %}
             {% else %}
-				<a class="link dib w-100 relative fw3 pv2 pr2 indent-l-{{depth}} margin-bottom-1 arrow-after" href="{{ element.urlAbs }}">{% if chapnum %}{{ element.chapter }} {% endif %}{{ element.name }}</a>
+				<a class="link dib w-100 relative fw4 pv2 pr2 indent-l-{{depth}} margin-bottom-1 arrow-after" href="{{ element.urlAbs }}">{% if chapnum %}{{ element.chapter }} {% endif %}{{ element.name }}</a>
             {% endif %}
         </li>
     {% endfor %}
@@ -31,11 +31,11 @@
 {% import _self as macros %}
 
 {% if settings.themes.cyanine.collapseNav %}
-    <button 
+    {# <button 
     	id="expander" 
     	data-expandlabel="{{ settings.themes.cyanine.expand|default('expand navigation')|e }}" 
     	data-collapselabel="{{ settings.themes.cyanine.collapse|default('collapse navigation')|e }}" 
-    	class="expander dim dn db-l link pointer w-100 ba pa2 mb3 f6">{{ settings.themes.cyanine.expand|default('expand navigation')|e }}</button>
+    	class="expander dim dn db-l link pointer w-100 ba pa2 mb3 f6">{{ settings.themes.cyanine.expand|default('expand navigation')|e }}</button>#}
 {% endif %}
 
 <ul class="cy-nav mainnavigation list pa0 menu f5">

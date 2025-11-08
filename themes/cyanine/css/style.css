@@ -38,7 +38,7 @@ blockquote p {
   display: inline;
 }
 article pre, article code{
-	font-family: monospace;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 article pre{
 	white-space: pre;
@@ -61,22 +61,36 @@ pre > code{
 pre > code.language-pagebreak{
 	display: none;
 }
+p {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+}
+
+a {
+	font-size: 14px !important;
+	font-weight: 400;
+}
+
+ul {
+	font-size: 14px !important;
+	font-weight: 400 !important;
+}
 dl{}
 dt{}
 dd{}
 img{}
 article h1, article h2, article h3, article h4, article h5, article h6{
 	line-height: 1.15em;
-	font-weight: 700; 
-	line-height: 1em; 
+	font-weight: 500; 
+	line-height: 1em;
 }
-h1,h2,h3,h4,h5,h6{ word-wrap: break-word; hyphens: auto; }
-article h1{ font-size: 2.2em; margin: 1.4em 0 0.6em; z-index:1; }
-article h2{ font-size: 1.6em; margin: 1.8em 0 0.6em; }
-article h3{	font-size: 1.3em; margin: 1.6em 0 0.6em; }
-article h4{	font-size: 1.1em; margin: 1.4em 0 0.6em; }
-article h5{	font-size: 1em; margin: 1.2em 0 0.6em; }
-article h6{	font-size: 1em; font-style: italic; font-weight:300; margin: 1em 0 0.6em; }
+h1,h2,h3,h4,h5,h6{ word-wrap: break-word; hyphens: auto;  }
+article h1{ font-size: 1.8em; margin: 1.4em 0 0.6em; z-index:1; color: #4b5563 !important;}
+article h2{ font-size: 1.5em; margin: 1.8em 0 0.6em; }
+article h3{	font-size: 1.2em; margin: 1.6em 0 0.6em; }
+article h4{	font-size: 1em; margin: 1.4em 0 0.6em; }
+article h5{	font-size: 0.9em; margin: 1.2em 0 0.6em; }
+article h6{	font-size: 0.9em; font-style: italic; font-weight:300; margin: 1em 0 0.6em; }
 article .h1, article .h2, article .h3, article .h4, article .h5, article .h6{
 	height: auto; /* fix for tachyons */
 }
@@ -347,10 +361,10 @@ button.play-video::after {
 }
 /* Nice set of system fonts, add this to the body-tag */
 .sans-serif-tm { 
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; 
+	font-family: Roboto,"Helvetica",sans-serif; 
 }
 .sans-serif-title{
-	font-family: arial,"Segoe UI",Roboto,-apple-system,BlinkMacSystemFont,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; 	
+	font-family: Roboto,"Helvetica",sans-serif; 	
 }
 /* optimize text, add this to the body-tag */
 .optimize-text{
@@ -373,6 +387,7 @@ button.play-video::after {
 .grid-header, .grid-main, .grid-sidebar{
 	display: block;
 	width: 100%;
+	background-color: white !important;
 }
 .grid-footer{
   grid-column: 1 / -1;
@@ -549,6 +564,7 @@ form input[type="submit"]:hover,form button:hover,.button:hover{
 	}
 	.grid-header{
 		grid-area: gridHeader;
+		background-color: white !important;
 	}
 	.grid-main{
 		grid-area: gridMain;

@@ -1,10 +1,8 @@
-# Typemill
+Samurai CMMS
 
-Typemill is a lightweight, flat-file CMS designed for simple, fast, and flexible website and eBook creation using Markdown. Create handbooks, documentation, manuals, reports, traditional websites, online novels, and more.
+This help centre is your guide to using Samurai CMMS.
+Here you’ll find step-by-step tutorials, feature overviews, and explanations of key concepts that make Samurai work.
 
-Log in to the author area at [/tm/login](/tm/login).
-
-![](media/live/chatgpt-typemill-dummy-wide.webp){.center loading="lazy" width="820" height="470"}
-
-Stay in the loop and subscribe to the [Typemill newsletter](https://typemill.net/news)!
+If you’re new to Samurai, start here to learn the basics and get up and running quickly.
+If you already use Samurai day-to-day, this site is your go-to reference for advanced tools, settings, and troubleshooting tips.
 

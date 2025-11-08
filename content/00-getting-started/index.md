@@ -1,4 +1,4 @@
-#  Getting Started with Typemill
+# Getting Started with Samurai
 
 Use this demo-content to familiarize yourself with Typemill.
 

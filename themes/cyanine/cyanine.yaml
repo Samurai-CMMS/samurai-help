@@ -759,6 +759,7 @@ forms:
           description: 'All fonts are system fonts with fallbacks'
           options:
             'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif': 'sans-serif'
+            '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif': 'Segoe UI (system default)'
             'georgia,times,serif': 'serif'
             'courier,sans-serif': 'courier (sans-serif)'
             'helvetica,sans-serif': 'helvetica (sans-serif)'
@@ -776,6 +777,7 @@ forms:
           description: 'All fonts are system fonts with fallbacks'
           options:
             'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif': 'sans-serif'
+            '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif': 'Segoe UI (system default)'
             'georgia,times,serif': 'serif'
             'courier,sans-serif': 'courier (sans-serif)'
             'helvetica,sans-serif': 'helvetica (sans-serif)'
@@ -793,6 +795,7 @@ forms:
           description: 'All fonts are system fonts with fallbacks'
           options:
             'BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif': 'sans-serif'
+            '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif': 'Segoe UI (system default)'
             'georgia,times,serif': 'serif'
             'courier,sans-serif': 'courier (sans-serif)'
             'helvetica,sans-serif': 'helvetica (sans-serif)'
