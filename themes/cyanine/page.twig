@@ -1,38 +1,33 @@
 {% set published = metatabs.meta.manualdate ? metatabs.meta.manualdate : metatabs.meta.modified %}
 
-<main class="{{ item.elementType }} w-100 pb5 bl br bb">
-
-	<div class="w-100 center grid-container">
-
-		<aside class="grid-header ph3 pv3">
-
-			<header>
-
-				<div class="logo">
-					<p class="pa0 ma0">
-						<a class="link f1 fw9" href="{{ base_url }}" title="My Title">						
-							{% if logo %}
-								<img src="{{ base_url }}/{{ logo }}" class="logo-image"/>
-							{% else %}
-								{{ settings.title|e }}
-							{% endif %}
-						</a>
-					</p>
-				</div>
-					
-			</header>
-
+<header class="sticky-header">
+    <div class="header-inner w-100 flex items-center justify-between ph3 pv2">
+        <div class="logo">
+            <a class="link f2 fw9" href="{{ base_url }}" title="Home">
+                {% if logo %}
+                    <img src="{{ base_url }}/{{ logo }}" class="logo-image"/>
+                {% else %}
+                    {{ settings.title|e }}
+                {% endif %}
+            </a>
+        </div>
+		<div>
 			{% if widgets %}
 				<div class="widgetcontainer">
 				{% for index,widget in widgets %}
-					<div id="{{ index }}" class="mt4-l mt3">
+					<div id="{{ index }}" class="">
 						{{ widget }}
 					</div>
 				{% endfor %}
 				</div>
 			{% endif %}
+		</div>
+    </div>
+</header>
 
-		</aside>
+<main class="{{ item.elementType }} w-100 pb5 bl br bb">
+
+	<div class="w-100 center grid-container">
 
 		<div class="grid-main ph3 ph4-l pv3 lh-copy f4-l f5 fw3">
 

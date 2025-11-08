@@ -49,3 +49,34 @@ td {
 footer {
   background-color: white !important;
 }
+
+/* Sticky header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff; /* or var(--background) if your theme defines one */
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.sticky-header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Optional tweaks for logo and breadcrumb */
+.sticky-header .logo img {
+  max-height: 40px;
+  vertical-align: middle;
+}
+
+.sticky-header #breadcrumb {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -697,6 +697,7 @@ button.play-video::after {
 
 .logo-image {
 	max-width: 200px;
+	padding-bottom: 10px !important;
 }
 
 @media screen and (min-width:30em) {

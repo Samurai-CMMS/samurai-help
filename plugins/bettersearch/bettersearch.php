@@ -187,7 +187,7 @@ class Bettersearch extends Plugin
 												'</symbol>' .
 											'</svg>' .
 											'<span class="searchicon"><svg class="icon icon-search"><use xlink:href="#icon-search"></use></svg></span>' .
-	        								'<input type="text" placeholder="' . $placeholder . '" />'.
+	        								'<input type="text" style="border-radius: 8px" placeholder="' . $placeholder . '" />'.
     									'</div>';
 
     	if(isset($pluginsettings['searchfield']) && $pluginsettings['searchfield'] == 'icon')
