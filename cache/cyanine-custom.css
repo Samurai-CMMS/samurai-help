@@ -121,3 +121,23 @@ footer {
     overflow: visible;
   }
 }
+
+.folder-children {
+  display: none;
+  margin-left: 1rem;
+}
+
+.folder-children.open {
+  display: block;
+}
+
+.arrow-after::after {
+  content: "▸";
+  position: absolute;
+  right: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+a.open.arrow-after::after {
+  transform: rotate(90deg);
+}
