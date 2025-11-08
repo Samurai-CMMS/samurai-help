@@ -1,0 +1,27 @@
+name: Better Search
+version: 3.1.2
+description: 'Add a full-text-search to your website and filter the result by folders.'
+author: Trendschau
+homepage: https://trendschau.net
+license: MAKER
+
+forms:
+  fields:
+    searchfield:
+      type: radio
+      label: 'Style of searchfield'
+      options:
+        'icon': 'Show an icon only'
+        'input': 'Show a search field'
+    placeholder:
+      type: text
+      label: 'Placeholder for search field'
+      palceholder: 'search...'
+    noresulttitle:
+      type: text
+      label: 'Title for result'
+      placeholder: 'No result'
+    noresulttext:
+      type: text
+      label: 'Text for no result message'
+      placeholder: 'We did not find anything for that search term.'
