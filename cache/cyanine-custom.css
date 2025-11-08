@@ -33,7 +33,7 @@
 }
 thead {
 	text-align: left;
-	background: #f5f6fa !important;
+	background: #e4e4e4 !important;
 }
 
 tr {
@@ -42,7 +42,7 @@ tr {
 
 td {
   border-top-style: solid;
-  border-color: #ebecef;
+  border-color: #e0e0e0;
   border-width: 0.5px;
 }
 
