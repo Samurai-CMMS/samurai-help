@@ -1,23 +1,23 @@
-<div class="f6 pv3 w-100 flex-l justify-between">
+<div class="f6 w-100 flex-l justify-between">
 
 	<div class="breadcrumb">
-		<a class="link f-link underline-hover breadcrumb" href="{{ base_url }}">{{ settings.title }}</a>
+		<a class="link f-link underline-hover breadcrumb" style="line-height: 3.5" href="{{ base_url }}">{{ settings.title }}</a>
 
 		{% for crumb in breadcrumb %}
 			&nbsp; &#x203A; &nbsp;  
 			{% if loop.last %}
 				<span class="pill-secondary">{{ crumb.name|e }}</span>
 			{% else %}
-				<a class="link f-link underline-hover breadcrumb" href="{{ crumb.urlRel }}">{{ crumb.name }}</a>
+				<a class="link f-link underline-hover breadcrumb" style="line-height: 3.5" href="{{ crumb.urlRel }}">{{ crumb.name }}</a>
 			{% endif %}
 		{% endfor %}
 	</div>
 	<div class="dn dib-l">
 		{% if item.prevItem %}
-			<a class="link pr1 f-link underline-hover breadcrumb" href="{{ item.prevItem.urlRel }}">&lsaquo;&nbsp; {{ settings.themes.cyanine.previous|default('previous') }}</a>
+			<a class="link pr1 f-link underline-hover breadcrumb" style="line-height: 3.5" href="{{ item.prevItem.urlRel }}">&lsaquo;&nbsp; {{ settings.themes.cyanine.previous|default('previous') }}</a>
 		{% endif %}
 		{% if item.nextItem %}
-			<a class="link pl1 f-link underline-hover breadcrumb" href="{{ item.nextItem.urlRel }}">{{ settings.themes.cyanine.next|default('next') }} &nbsp;&rsaquo;</a>
+			<a class="link pl1 f-link underline-hover breadcrumb" style="line-height: 3.5" href="{{ item.nextItem.urlRel }}">{{ settings.themes.cyanine.next|default('next') }} &nbsp;&rsaquo;</a>
 		{% endif %}					
 	</div>
 </div>

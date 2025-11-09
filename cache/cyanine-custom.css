@@ -150,6 +150,23 @@ a.open.arrow-after::after {
   .modal-search {
     width: 100%;
   }
+  .menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+ .search-modal-margin {
+    margin-top: 70px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+  } 
+  .mainnavigation .active > a:first-child {
+    color: #fff;
+  }
 }
 
 .burgerbutton {
@@ -164,25 +181,4 @@ a.open.arrow-after::after {
 #burger:checked~.burgerbutton {
     color: #333;
     background: #fff;
-}
-
-.menu {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.mainnavigation .active > a:first-child {
-  color: #fff;
-}
-
-.search-modal-margin {
-  margin-top: 70px !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  width: 100% !important;
-  border-radius: 0 !important;
 }
