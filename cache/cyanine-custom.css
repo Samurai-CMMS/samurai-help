@@ -141,3 +141,48 @@ footer {
 a.open.arrow-after::after {
   transform: rotate(90deg);
 }
+
+@media (max-width: 768px) {
+  .logo {
+    padding-left: 40px;
+    padding-top: 4px;
+  }
+  .modal-search {
+    width: 100%;
+  }
+}
+
+.burgerbutton {
+  position: fixed;
+  top: -18px;
+  left: -10px;
+  width: 40px;
+  height: 50px;
+  z-index: 1000;
+}
+
+#burger:checked~.burgerbutton {
+    color: #333;
+    background: #fff;
+}
+
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mainnavigation .active > a:first-child {
+  color: #fff;
+}
+
+.search-modal-margin {
+  margin-top: 70px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+}

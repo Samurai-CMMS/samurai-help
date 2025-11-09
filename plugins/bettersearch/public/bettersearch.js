@@ -27,7 +27,7 @@ function openSearch()
     modal.id = 'searchModal';
     modal.style.display = 'block';
     modal.innerHTML = `
-        <div class="modal-content">
+        <div class="modal-content search-modal-margin">
             <div class="modal-container">
                 <div class="modal-filter" id="modalFilter">
                     <!-- Placeholder for filters -->
